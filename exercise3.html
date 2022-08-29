@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Exercise#3: Changing box color on click </title>
+    <style>
+        #mydiv {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+</style>
+</head>
+<body>
+    <div onclick="changeBackground ()" id="mydiv"></div>
+    <script>
+function changeBackground(){
+    const randomColor =Math.floor(Math.random()*16777215).toString(16);
+    document.getElementById("mydiv").style.backgroundColor="#"+randomColor;
+}
+    </script>
+    
+</body>
+</html>
